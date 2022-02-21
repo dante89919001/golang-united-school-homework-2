@@ -1,4 +1,4 @@
-package solution
+package square
 import "math"
 // Define custom int type to hold sides number and update CalcSquare signature by replacing #yourTypeNameHere#
 
