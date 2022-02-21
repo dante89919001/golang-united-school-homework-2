@@ -4,13 +4,17 @@ import "math"
 
 type intCustomType int
 
+var SidesTriangle myType = 3
+var SidesSquare myType = 4
+var SidesCircle myType = 0
+
 func CalcSquare(sideLen float64, sidesNum intCustomType) (result float64) {
-	if sidesNum == 3 {
-		return result = (math.Pow(sideLen, 2) * math.Sqrt(3)) / 4
-	} else if sidesNum == 4 {
-		return result = math.Pow(sideLen, 2)
-	} else if sidesNum == 0 {
-		return result = math.Pi * math.Pow(sideLen, 2)
+	if sidesNum == SidesTriangle {
+		 result = (math.Pow(sideLen, 2) * math.Sqrt(3)) / 4
+	} else if sidesNum == SidesSquare {
+		 result = math.Pow(sideLen, 2)
+	} else if sidesNum == SidesCircle {
+		 result = math.Pi * math.Pow(sideLen, 2)
 	}
-	return 0
+	return 
 }
